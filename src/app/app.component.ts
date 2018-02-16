@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Renderer2} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,16 @@ export class AppComponent {
   courseGoals = [
     {title: 'Master Angular Styling', isActiveGoal: true},
     {title: 'Understand Angular Animations', isActiveGoal: false},
-    {title: 'Something Something Styling', isActiveGoal: false}
   ];
+  isFav = true;
+
+  constructor(private renderer : Renderer2) {
+
+  }
+
+  showBoring(element: HTMLElement) {
+   // element.style.display ='block';
+
+    this.renderer.setStyle(element, 'display', 'block');
+  }
 }

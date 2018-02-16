@@ -1,0 +1,20 @@
+h1 {
+  color : green;
+}
+:host {
+  display: block;
+  border: 10px solid black;
+  padding: 20px;
+}
+
+:host(.favorite){
+  border: 10px solid red;
+}
+
+:host-context(.boring #very-boring){
+  border: 1px solid green;
+}
+
+:host-context(.boring #very-boring)/deep/h1{
+  color : purple;
+}

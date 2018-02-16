@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { GoalComponent } from './components/goal/goal.component';
 import { QuoteComponent } from './components/quote/quote.component';
+import { AuthorComponent } from './components/author/author.component';
 
 
 
@@ -13,6 +14,7 @@ import { QuoteComponent } from './components/quote/quote.component';
     AppComponent,
     GoalComponent,
     QuoteComponent,
+    AuthorComponent,
 
   ],
   imports: [
